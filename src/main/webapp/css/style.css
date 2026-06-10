@@ -143,3 +143,351 @@ footer {
     color: #aaa;
     font-size: 0.85em;
 }
+
+/* ===== 按钮样式 ===== */
+.btn-primary {
+    display: inline-block;
+    padding: 8px 20px;
+    background: #1a1a2e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9em;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+.btn-primary:hover {
+    background: #16213e;
+}
+.btn-primary:disabled {
+    background: #999;
+    cursor: not-allowed;
+}
+
+.btn-sm {
+    padding: 4px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85em;
+    margin: 0 2px;
+}
+.btn-edit {
+    background: #e8f0fe;
+    color: #1a73e8;
+}
+.btn-edit:hover {
+    background: #d2e3fc;
+}
+.btn-del {
+    background: #fce8e6;
+    color: #d93025;
+}
+.btn-del:hover {
+    background: #f8d7da;
+}
+.btn-reset {
+    display: inline-block;
+    padding: 8px 20px;
+    background: #888;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+.btn-reset:hover {
+    background: #666;
+}
+
+/* ===== 模态框 (dialog) ===== */
+dialog {
+    border: none;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    max-width: 560px;
+    width: 90%;
+}
+dialog::backdrop {
+    background: rgba(0,0,0,0.4);
+}
+dialog h2 {
+    font-size: 1.3em;
+    color: #1a1a2e;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+.form-group label {
+    display: block;
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.9em;
+    font-family: inherit;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #1a73e8;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(26,115,232,0.15);
+}
+.form-group .hint {
+    display: block;
+    font-size: 0.8em;
+    color: #999;
+    margin-top: 3px;
+}
+
+.form-row {
+    display: flex;
+    gap: 16px;
+}
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #eee;
+}
+
+/* ===== 高级查询面板 ===== */
+.query-panel {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.query-panel h3 {
+    font-size: 1.1em;
+    color: #1a1a2e;
+    margin-bottom: 16px;
+}
+
+/* 可收缩查询面板标题 */
+.query-panel-header {
+    cursor: pointer;
+    user-select: none;
+    padding: 4px 0;
+}
+.query-panel-header:hover {
+    opacity: 0.7;
+}
+.query-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+.query-field {
+    flex: 1;
+    min-width: 180px;
+}
+.query-field label {
+    display: block;
+    font-size: 0.85em;
+    color: #666;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+.query-field input,
+.query-field select {
+    width: 100%;
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.85em;
+}
+.query-field select[multiple] {
+    height: 80px;
+}
+.range-inputs {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.range-inputs input {
+    flex: 1;
+    min-width: 0;
+}
+.range-inputs span {
+    color: #999;
+}
+.query-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding-top: 12px;
+    border-top: 1px solid #eee;
+}
+.query-sort {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: auto;
+}
+.query-sort label {
+    font-size: 0.85em;
+    color: #666;
+    white-space: nowrap;
+}
+.query-sort select {
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.85em;
+}
+.result-count {
+    font-size: 0.9em;
+    color: #1a73e8;
+    font-weight: 500;
+}
+
+
+.compare-table-wrapper {
+    margin-bottom: 24px;
+}
+.compare-table th {
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+.compare-table th small {
+    font-weight: normal;
+    font-size: 0.85em;
+    opacity: 0.8;
+}
+.compare-table td {
+    text-align: center;
+}
+.compare-table .label-cell {
+    font-weight: 600;
+    color: #1a1a2e;
+    text-align: left;
+    background: #f8f9fa;
+}
+.compare-table .num {
+    font-family: 'Courier New', monospace;
+    font-size: 0.95em;
+}
+.compare-table .best {
+    background: #e6f4ea !important;
+    color: #137333;
+    font-weight: bold;
+}
+.compare-table .worst {
+    background: #fce8e6 !important;
+    color: #c5221f;
+}
+
+/* ===== 差异总结 ===== */
+.summary-panel {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.summary-panel h3 {
+    font-size: 1.1em;
+    color: #1a1a2e;
+    margin-bottom: 16px;
+}
+.summary-panel p {
+    margin-bottom: 8px;
+    line-height: 1.7;
+}
+.summary-panel hr {
+    margin: 12px 0;
+    border: none;
+    border-top: 1px solid #eee;
+}
+.summary-panel ul {
+    margin-left: 20px;
+}
+.summary-panel li {
+    margin-bottom: 6px;
+    line-height: 1.7;
+}
+
+/* ===== 图表容器 ===== */
+.chart-panel {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.chart-panel h3 {
+    font-size: 1.1em;
+    color: #1a1a2e;
+    margin-bottom: 16px;
+}
+
+/* ===== 复选框样式 ===== */
+input[type="checkbox"] {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
+/* ===== SQL 执行展示 ===== */
+.sql-display {
+    background: #e8f5e9;
+    border: 1px solid #a5d6a7;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    font-family: 'Courier New', 'Consolas', monospace;
+    font-size: 0.85em;
+    line-height: 1.6;
+    word-break: break-all;
+    animation: sqlFadeIn 0.3s ease;
+}
+.sql-display .sql-label {
+    font-weight: 600;
+    color: #2e7d32;
+    margin-right: 8px;
+}
+.sql-display code {
+    color: #1b5e20;
+    white-space: pre-wrap;
+}
+.sql-display .sql-hint {
+    color: #558b2f;
+    font-size: 0.9em;
+    margin-top: 6px;
+    font-family: inherit;
+}
+@keyframes sqlFadeIn {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== 页面副标题 ===== */
+.page-subtitle {
+    color: #888;
+    font-size: 0.9em;
+    margin-bottom: 16px;
+}

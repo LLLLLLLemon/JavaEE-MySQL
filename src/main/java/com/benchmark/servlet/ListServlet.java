@@ -33,6 +33,9 @@ public class ListServlet extends HttpServlet {
         } else if ("metrics".equals(type)) {
             req.setAttribute("dataList", metricDAO.findAll());
             viewPath = "/WEB-INF/views/metrics.jsp";
+        } else if ("fullview".equals(type)) {
+            req.setAttribute("dataList", modelDAO.findAllWithMetrics());
+            viewPath = "/WEB-INF/views/fullview.jsp";
         } else {
             resp.sendRedirect(req.getContextPath() + "/");
             return;
