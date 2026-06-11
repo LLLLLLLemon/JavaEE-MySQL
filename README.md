@@ -148,24 +148,3 @@ creators（厂商）──1:N──→ models（模型）──1:1──→ mode
 厂商、模型、指标三表的增删改查，均通过模态框弹窗操作，支持实时 SQL 回显。
 
 ---
-
-## 七、常见问题
-
-**Q: 页面无数据？**
-- 确认 MySQL 已启动并执行了 `llm_benchmark.sql`
-- 检查 `db.properties` 中密码是否正确
-- **JDBC URL 中 `characterEncoding` 必须使用 `UTF-8`（不是 `utf8mb4`）**
-- 清理 Tomcat work 目录后重启
-
-**Q: 404 错误？**
-- 确认 Tomcat 10.1+ 已正确配置
-- 检查项目访问路径是否正确
-
-**Q: Maven 依赖下载失败？**
-- 确认 `.mvn/settings.xml` 已配置阿里云镜像
-- 检查本地仓库目录权限
-- 在 IDEA 中刷新 Maven 项目
-
-**Q: 综合表搜索后模型勾选丢失？**
-- 本系统已修复此问题：搜索/筛选/排序/重置**永不**清空 `selectedModelIds`
-- 仅在点击"开始对比"并跳转后，返回时自动清空
